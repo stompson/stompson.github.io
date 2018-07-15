@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+## Steven Tompson, Ph.D
 
-You can use the [editor on GitHub](https://github.com/stompson26/stompson26.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Robert J. Eichelberger Distinguished Postdoctoral Fellow, U.S. Army Research Laboratory
+Visiting Scholar, University of Pennsylvania
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### About
 
-### Markdown
+I received my PhD in Social Psychology from the University of Michigan in 2016. Since then, I have been working as a postdoctoral scholar at the University of Pennsylvania and U.S. Army Research Laboratory.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stompson26/stompson26.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Broadly, I am interested in understanding how culture and biology interact to influence behavior. While in graduate school I used both behavioral and fMRI experiments to study how social and cultural factors influence decision-making, primarily in consumer and health contexts. Over the past two years as a postdoctoral researcher at the University of Pennsylvania and the U.S. Army Research Laboratory, I have been developing expertise in network approaches to analyzing neuroimaging data. In particular, I use conceptual frameworks and computational tools from the emerging field of network neuroscience to advance understanding of how networks of brain regions contribute to decision-making. Focusing on both culture and social networks, I study how people acquire and internalize information about their social context, and how that information in turn influences human behavior and decision-making. My research has examined this in four key ways: how culture influences decision-making, how social networks influence the effects of persuasive messages on health behaviors and decisions, how culture and genes interact to influence beliefs, values, and emotional experience, and how people learn information about social networks.  In future work, I plan to expand upon this work by examining how culture and social network structure influence how people learn information about their social networks, as well as how these processes develop over time, influence decisions about social relationships, and how they might facilitate acculturation processes in recent immigrants.
