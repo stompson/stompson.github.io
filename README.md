@@ -1,5 +1,5 @@
 
-![brain_logo](static/Picture2.png)
+![brain_logo](static/Picture3.png)
 
 ## Steven Tompson, Ph.D
 
