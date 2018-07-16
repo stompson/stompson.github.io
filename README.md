@@ -10,9 +10,9 @@ University of Pennsylvania
 
 I received my PhD in Social Psychology from the University of Michigan in 2016. Since then, I have been working as a postdoctoral scholar at the University of Pennsylvania and U.S. Army Research Laboratory.
 
-![brain_logo](static/Picture3.png)
-
 ### Research Interests
+
+![brain_logo](static/Picture3.png)
 
 Broadly, I am interested in understanding how social context, culture, and biology mutually influence behavior. I use experimental and neuroimaging methods to study how people learn about their social world (social relationships, social and cultural norms, etc.) and how this internalized knowledge about the social world in turn influences their thoughts, behaviors, and decisions.  
 
