@@ -1,10 +1,12 @@
 ## Steven Tompson, Ph.D
 
+<img src="static/tompson_professional_photo.jpg" width="122" height="184" align="right">
+
 Robert J. Eichelberger Distinguished Postdoctoral Fellow, U.S. Army Research Laboratory
 
 Visiting Scholar, University of Pennsylvania
 
-<img src="static/tompson_professional_photo.jpg" width="122" height="184" align="right">
+
 
 ### About Me
 
