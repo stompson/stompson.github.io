@@ -5,3 +5,10 @@
 
 Robert J. Eichelberger Distinguished Postdoctoral Fellow  
 U.S. Army Research Laboratory  
+
+<a href="https://stompson26.github.io/about">About Me</a>
+<p></p>
+<a href="https://stompson26.github.io/research">Research Interests</a>
+<p></p>
+<a href="https://stompson26.github.io/cv">CV</a>
+<p></p>
