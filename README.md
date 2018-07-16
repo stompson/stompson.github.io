@@ -1,6 +1,6 @@
 ## Steven Tompson, Ph.D
 
-<img src="static/tompson_professional_photo.jpg" width="122" height="184" align="right">
+<img src="static/IMG_5032 (1).jpg" width="200" height="200" align="right">
 
 Robert J. Eichelberger Distinguished Postdoctoral Fellow, U.S. Army Research Laboratory
 
