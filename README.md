@@ -1,8 +1,9 @@
-![brain_logo](static/Picture3.png)
 ## Steven Tompson, Ph.D
 
 Robert J. Eichelberger Distinguished Postdoctoral Fellow, U.S. Army Research Laboratory
 Visiting Scholar, University of Pennsylvania
+
+![profile_pic](static/tompson_professional_photo.png)
 
 ### About Me
 
