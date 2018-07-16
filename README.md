@@ -3,9 +3,7 @@
 Robert J. Eichelberger Distinguished Postdoctoral Fellow, U.S. Army Research Laboratory
 Visiting Scholar, University of Pennsylvania
 
-![profile_pic](static/tompson_professional_photo.jpg height="50%" width="50%")
-
-<img src="static/tompson_professional_photo.jpg" width="200" height="400">
+<img src="static/tompson_professional_photo.jpg" width="200" height="300">
 
 ### About Me
 
