@@ -8,7 +8,7 @@ University of Pennsylvania
 
 ### About Me
 
-<img src="stompson26.github.io/static/IMG_5032 (1).jpg" width="200" height="200">
+<img src="stompson26.github.io/static/IMG_5032 (1).jpg">
 
 I received my PhD in Social Psychology from the University of Michigan in 2016. Since then, I have been working as a postdoctoral scholar at the University of Pennsylvania and U.S. Army Research Laboratory.
 
