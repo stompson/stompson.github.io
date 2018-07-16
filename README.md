@@ -3,11 +3,9 @@
 Robert J. Eichelberger Distinguished Postdoctoral Fellow, U.S. Army Research Laboratory
 Visiting Scholar, University of Pennsylvania
 
-![profile_pic](static/tompson_professional_photo.jpg)
-
 ### About Me
 
-I received my PhD in Social Psychology from the University of Michigan in 2016. Since then, I have been working as a postdoctoral scholar at the University of Pennsylvania and U.S. Army Research Laboratory.
+I received my PhD in Social Psychology from the University of Michigan in 2016. Since then, I have been working as a postdoctoral scholar at the University of Pennsylvania and U.S. Army Research Laboratory. ![profile_pic](static/tompson_professional_photo.jpg){:height="50%" width="50%"}
 
 ### Research Interests
 
