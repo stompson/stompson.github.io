@@ -10,5 +10,3 @@ U.S. Army Research Laboratory
 <p></p>
 <a href="https://stompson26.github.io/research">Research Interests</a>
 <p></p>
-<a href="https://stompson26.github.io/cv">CV</a>
-<p></p>
