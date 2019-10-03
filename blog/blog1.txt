@@ -1,0 +1,103 @@
+Hi my name is Steve Tompson and I'm a researcher and data analyst.
+I've also been a Michigan Wolverines fan since I moved to Ann Arbor and started working as a researcher at UofM in 2009.
+My first game at the Big House, Denard Robinson fumbled on his first snap, picked the ball up, and ran the ball 43 yards for a TD.
+My second game at the Big House, Michigan scored with 11 seconds left to beat Notre Dame.
+Just two years later they completed an even more improbable comeback, 
+scoring 28 points in the 4th quarter, including a 3-play 80-yard drive in the final 30 seconds to clinch the victory.
+There have been a few decent years in between, but it's pretty safe to say that Michigan football's recent history has been disappointing.
+
+Michigan is 2-6 against their rivals (Michigan State and Ohio State), 6-8 in games decided by one score or less, 8-11 against top 25 opponents, 1-9 against top 10 opponents,
+X-X against teams who finished the season with a top-10 offense, and X-X against teams who finished the season with a top-10 defense.
+
+*** Get stats against top-10 S&P+ offenses and defenses
+
+On the positive side, Michigan is 38-9 against non-rivals and 39-7 against teams outside the top-10. 
+It's safe to say that Michigan is a top-25 team, but is struggling to compete against the upper echelon of college football. 
+So what is holding Michigan back? 
+
+There have been a number of explanations posited over the past few years: 
+
+1. Michigan is undisciplined and poorly coached, 
+2. The offensive system is too complicated for college players, 
+3. The offensive system is too slow, antiquated, and poorly suited for competing against good teams
+4. The team is at a talent disadvantage relative to other top-10 teams
+5. Teams have figured out Don Brown's defense
+6. The offense lacks identity
+
+These all have some merit and I might tackle the discipline and defense issues in future posts, but for now I would like to focus on the offense. 
+The offense is clearly the most disappointing part of the team (see stats below), and so even if those other issues are contributing to the team's struggles to be a top-10 team, 
+figuring out how to fix the offense would go a long way towards making this team competitive against elite opponents.
+
+*** Get stats about how top-10 teams scoring is affected against top-10 opponents
+
+There are a few interesting take-aways from a quick examination of Michigan's play-calling data.
+-First, they need to get the ball to their playmakers more frequently
+    -Charbonnet, Turner, Collins, Black, DPJ, Bell, and McKeon are averaging X yards/play with a X% success rate
+    -All other RB/WR/TE are averaging X yards/play with a X% success rate
+    -X% of touches go to these 7 players
+    -You have 7 solid weapons on this team. No offense to Eubanks, Wilson, Giles Jackson, etc., but they just don't need to be getting X% of the non-garbage time touches
+-Second, the running game is sorely lacking big plays, in part due to an imbalance in # of box defenders
+    -on an average run play, Michigan has X WRs and the defense has X defenders in the box
+-2A and 2B:
+    -they need to develop a solid 2nd running play to balance their reliance on the inside zone
+    -they need to establish the QB run to spread out the defense and remove the box defender advantage
+-Third, the passing game needs more fades 
+-Fourth, the passing game needs to work on the timing for screens and slants
+    -completion rate for screens and slants by opponents is X%, whereas completion rate for Michigan is X%
+    
+    
+*** Get stats and compare touch rate, success rate, and yards/play for Michigan's top-5 players versus the rest of Michigan's offense
+*** Get stats on # of box defenders on run plays and the run rate, success rate, yards/play, and big play rate for Michigan relative to top-40 opponent offenses
+*** Get stats on RB runs that follow a QB run, or compare QB runs versus RB runs
+*** Get stats on fades, screens, slants, and RB receptions
+
+In particular, Michigan's offense has continually let the team down: 
+
+1. Michigan is 3-13 when the opposing team scores 24 or more points, and
+2. Michigan's offense has scored 19 points/game when playing a top-10 opponent and 25 points/game when playing a top-25 opponent (compared to 37 points/game against unranked opponents)
+
+In this first blog post, I will walk through how to scrape play-by-play data for Michigan games from the web and import it into a pandas dataframe. 
+Then, I will walk through some basic data mining approaches to identify trends in Michigan's play-calling.
+
+
+
+Blog #2: How does Michigan's play-calling compare to their opponents (especially the ones with good offenses)
+
+So what is holding 
+
+6-8 in games decided by one score or less, 9-8 in games separated by one score entering the 4th quarter, 8-11 against top 25 opponents, 1-9 against top 10 opponents, 
+X-X against teams who finished the season with a top-10 offense, and X-X against teams who finished the season with a top-10 defense.
+-Michigan is 17-10 in close games entering the 4th quarter, but that is mostly because they are 8-0 in games where they had at least an 8 point lead entering the 4th quarter
+
+There are a few interesting take-aways from a quick examination of Michigan's play-calling data.
+-First, they need to get the ball to their playmakers more frequently
+    -Charbonnet, Turner, Collins, Black, DPJ, Bell, and McKeon are averaging X yards/play with a X% success rate
+    -All other RB/WR/TE are averaging X yards/play with a X% success rate
+    -X% of touches go to these 7 players
+    -By contrast, X% of touches/targets went to the top 7 players on top-5 offenses in 2018
+    -You have 7 solid weapons on this team. No offense to Eubanks, Wilson, Giles Jackson, etc., but they just don't need to be getting X% of the non-garbage time touches
+-Second, the running game is sorely lacking big plays, in part due to an imbalance in # of box defenders
+    -on an average run play, Michigan has X WRs and the defense has X defenders in the box
+-2A and 2B:
+    -they need to develop a solid 2nd running play to balance their reliance on the inside zone
+    -they need to establish the QB run to spread out the defense and remove the box defender advantage
+-Third, the passing game needs more fades 
+-Fourth, the passing game needs to work on the timing for screens and slants
+    -completion rate for screens and slants by opponents is X%, whereas completion rate for Michigan is X%
+
+
+2. Michigan's offense has scored multiple TDs ONCE in 8 games where they were losing by 7 points or less entering the 4th quarter (somehow Michigan is 3-5 in those games).
+3. Michigan's offense has scored multiple TDs 3 times in 27 competitive games entering the 4th quarter (also, fewer than half of all Michigan games have been competitive in the past 5 years
+
+Analyses to run:
+0- Get final S&P+ offense and defense ratings for Michigan's opponents
+1a- Compare touch rate, success rate, and yards/play for Michigan's top-5 players versus the rest of Michigan's offense
+1b- Compare touch rate, success rate, and yards/play for top-5 players at Michigan versus top-5 offenses in 2019 (or use Alabama, LSU, OSU)
+2a- Compare # of defenders versus blockers in the box for Michigan versus top-40 offense opponents
+2b- Compare % of run plays that are big plays depending on the number of players in the box for Michigan
+2c- Compare play-call %, success rate, and yards/play for QB runs for Michigan versus other runs and Michigan versus top-40 offense opponents
+3a- Compare success rate and yards/play for fades for Michigan versus top-40 offense opponents
+3b- Compare % of play-calls and success rate for top-3 plays for pass and run for Michigan versus top-40 offense opponents (relative to rest of plays)
+3c- Are QB runs more successful? Do RB runs that follow a QB run work better?
+4a- Compare % of play-calls, yards/play, completion rate, and success rate for screens and slants for Michigan versus top-40 offense opponents
+4a- Compare % of play-call triples that are the same type (run-run-run or pass-pass-pass) vs. top-10 offenses
