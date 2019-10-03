@@ -2,7 +2,7 @@
 ![brain_logo](static/Picture5.png)
 
 ### Steven Tompson, PhD 
-### Social Psychologist | Data Nerd | Sports Enthusiast
+Social Psychologist | Data Nerd | Sports Enthusiast
 
 Robert J. Eichelberger Distinguished Postdoctoral Fellow  
 U.S. Army Research Laboratory  
