@@ -1,5 +1,4 @@
-
-![brain_logo](static/Picture5.png =8x2.87)
+<img src="{{ site.baseurl }}/static/Picture5.png" width="300" align="left">
 
 ## Steven Tompson, PhD 
 Social Psychologist | Data Nerd | Sports Enthusiast
