@@ -1,7 +1,7 @@
 
-![brain_logo](static/Picture5.png)
+![brain_logo](static/Picture5.png =8x2.87)
 
-### Steven Tompson, PhD 
+## Steven Tompson, PhD 
 Social Psychologist | Data Nerd | Sports Enthusiast
 
 Robert J. Eichelberger Distinguished Postdoctoral Fellow  
