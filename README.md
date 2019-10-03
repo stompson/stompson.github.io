@@ -1,6 +1,8 @@
 
 ![brain_logo](static/Picture5.png)
 
+## Steven Tompson
+
 Robert J. Eichelberger Distinguished Postdoctoral Fellow  
 U.S. Army Research Laboratory  
 
