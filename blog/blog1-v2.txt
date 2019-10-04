@@ -1,9 +1,10 @@
-What in the world is going on with the Michigan Wolverines? 
 Jim Harbaugh was supposed to be the savior of Ann Arbor. 
 The man who would finally bring Michigan back to its glory days, its rightful place on top of the Big Ten, and a National Championship.
 But these days, many people are having a hard time imagining Michigan even winning its division, much less the Big Ten or a National Championship.
+So what in the world is going on with the Michigan Wolverines? 
 
 I'm a researcher and data analyst, and so I thought we might be able to derive some insights into the Michigan Wolverines' struggles using data analytics.
+If you're interested in the data or code I used to derive these insights, you can go to my GitHub page [link] to access all the data and code.
 
 First, defining the problem:
 
@@ -14,10 +15,47 @@ Instead, Michigan is 1-9 against top-10 opponents, has been outscored 34 to 19 o
 
 Clearly when you're being outscored 34 to 19 there are issues that need to be fixed on both offense and defense, 
 but I am going to test the hypothesis that, contrary to the old adage that "Defense wins championships", 
-an elite offense is crucial to winning games against elite opponents.
+an elite offense is crucial to winning games against elite opponents. 
+In other words, if you can only have an elite offense or an elite defense, 
+which gives you a better shot at beating other elite teams?
 
-To do this, I am using data from the CFBdata API which contains S&P+ team ratings as well as game outcomes for each team.
-Here I am going to test the hypothesis 
+To do this, I am using data from the CollegeFootballData.com API which contains S&P+ team ratings as well as game outcomes for each team.
+
+It turns out that if you have a top-10 offense, you win about 47% of the time agains a top-10 ranked opponent. 
+If you have a top-10 defense, you only win about 40% of time. 
+What's more, elite offenses score 10 fewer points against top-10 opponents, whereas elite defenses allow 14 more points against top-10 opponents 
+(relative to what S&P+ expects the team would score or allow versus an average opponent).
+So that suggests that having an elite offense is slightly more advantageous than having an elite defense.
+But Jim Harbaugh hasn't even won 40% of the time against elite opponents, 
+so clearly there's more going on than just lacking an elite offense.
+
+Some of that is luck (especially the 2015 Michigan State and 2016 Ohio State games), 
+but some of that might also be the antiquated offensive philosophy that Harbaugh has emphasized the past few years.
+Having big TEs and mauling offensive linemen helps you against teams that you can out-muscle, 
+but seems less effective against teams that also have big, athletic, and talented players.
+Jim Harbaugh seems to have conceded this point, hiring Josh Gattis in the offseason to modernize the offense and convert it 
+from a pro-style offense to a spread-offense. 
+Gattis' motto in the offseason was #speedinspace and the goal was to install an offense that would spread the defense out and 
+give the ball to Michigan's athletes in space to allow them to make big plays.
+
+But how well has this worked out so far? In the wake of mediocre offensive performances against Army and Wisconsin,
+people have begun to question "whether the offense lacks identity", "if the system has been fully implemented yet", 
+or "if the system is too complicated for college players".
+
+To answer this question, I'm going to be scraping play-by-play data from MGoBlog. 
+This is a great dataset because Brian Cook, the founder of MGoBlog, has painstakingly coded each play for offensive and defensive formation,
+play call, and number of RBs, WRs, and TEs on the field.
+
+The first way I looked at this question is to ask, what percentage of the time is Michigan putting its players in space? 
+Lots of situations and play calls put players in space, but I chose to focus on four fundamental aspects of spread offenses:
+
+1. Percentage of non-goal-line plays with 3+ WRs
+2. Percentage of non-goal-line run plays that utilize a read option, QB run, or run-pass option
+3. Percentage of non-goal-line pass plays that utilize short/quick routes that get the ball to an athlete in space
+4. Percentage of non-goal-line pass plays that utilize deep/vertical routes that throw the ball up and let your athletic receivers 
+
+
+but I chose to look at four types of plays: QB runs, screens, short/quick routes (e.g., slants, drags, crosses, flats, etc.), and deep routes (e.g., fades, seams, etc.)
 
 -How do teams' offenses and defenses perform against elite opponents RELATIVE to their average output? 
 -OR relative to how many points they would be expected to score (or allow) against an average defense (or offfense)?
@@ -25,3 +63,17 @@ Here I am going to test the hypothesis
 
 Once we've established that having an elite offense is important for winning big games against elite opponents, 
 what is ailing Michigan's offense, and what can Michigan do to improve?
+
+There have been a few theories proposed as to why Michigan's offense is struggling this year. I'll tackle a few of these, 
+but will try to focus more on the second part of the question, 
+to see where Michigan is currently doing well and where they can improve. 
+
+Why is Michigan's offense doing poorly?
+1- QB injuries and lack of QB run threat is hampering this offense
+2- Lack of offensive identity
+1. Michigan is undisciplined and poorly coached, 
+2. The offensive system is too complicated for college players, 
+3. The offensive system is too slow, antiquated, and poorly suited for competing against good teams
+4. The team is at a talent disadvantage relative to other top-10 teams
+5. Teams have figured out Don Brown's defense
+6. The offense lacks identity

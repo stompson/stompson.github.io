@@ -1,7 +1,7 @@
 <img src="{{ site.baseurl }}/static/Picture5.png" width="750" align="center">
 <br/>
 ## Steven Tompson, PhD 
-Social Psychologist | Data Nerd | Sports Enthusiast
+Social Psychologist & Data Nerd
 
 Robert J. Eichelberger Distinguished Postdoctoral Fellow  
 U.S. Army Research Laboratory  
