@@ -1,0 +1,126 @@
+---
+layout: default
+title: Anatomy of an elite offense
+---
+
+<div class="blog1">
+	<h1 align="center">Anatomy of an elite offense (and how to rehab Michigan football)</h1>
+	<img src="{{ site.baseurl }}/static/harbaugh.jpg" width="300" align="right">
+	<p>Jim Harbaugh was supposed to be the savior of Ann Arbor. 
+	The man who would finally bring Michigan back to its glory days, its rightful place on top of the Big Ten, and a National Championship. 
+	But these days, many people are having a hard time imagining Michigan even winning its division, much less the Big Ten or a National Championship. 
+	So what in the world is going on with the Michigan Wolverines? </p>
+	
+	<p>I'm a researcher and data analyst, and so I thought we might be able to derive some insights into the Michigan Wolverines' struggles using data analytics. 
+	If you're interested in the data or code I used to derive these insights, you can go to my <a href="https://github.com/stompson/analtyics_blog/blog1">Github page</a> to access all the data and code.</p>
+
+    <h2>Is having an elite offense better than having an elite defense?</h2>
+    <p>First, defining the problem:</p>
+    <p>Michigan is actually quite good against decent opponents. They're 7-3 and have outscored teams ranked 10-25 by an average score of 31-14. 
+    They've had a top-10 recruiting class three of the past four years and a top-10 defense four years in a row. 
+    But, their elite defense and elite talent have not been nearly good enough when it comes to playing other elite teams. 
+    Instead, Michigan is 1-9 against top-10 opponents, has been outscored 34 to 19 on average, and has only scored 30+ points once. </p>
+    <p>Clearly when you're being outscored 34 to 19 there are issues that need to be fixed on both offense and defense,  
+    but I am going to test the hypothesis that, contrary to the old adage that "defense wins championships",  
+    an elite offense is crucial to winning games against elite opponents.  In other words, if you can only have an elite offense or an elite defense, 
+    which gives you a better shot at beating other elite teams? </p>
+    <p>To do this, I am using data from the <a href="https://collegefootballdata.com/">CollegeFootballData.com API</a> 
+    which contains S&P+ team ratings as well as game outcomes for each team. </p>
+    <p>It turns out that if you have a top-10 offense, you win about 47% of the time agains a top-10 ranked opponent.  
+    If you have a top-10 defense, you only win about 40% of time. Similarly, if you have an elite offense but not an elite defense, you win about 40% of the time,  and if you have an elite defense but not an elite offense, you win about 33% of the time. </p>
+    <p> </p>
+    <[insert Figure1.png here]> figure with win percentages for elite offenses and defenses.
+    <img src="{{ site.baseurl }}/blog1/figures/fig1.jpg" width="300"><br>
+
+    <p>So that suggests that having an elite offense is slightly more advantageous than having an elite defense. But Jim Harbaugh hasn't even won 33% of the time against elite opponents, so clearly there's more going on than just lacking an elite offense. </p>
+    <p>Some of that is luck (especially the 2015 Michigan State and 2016 Ohio State games-- winning those two games would get Michigan to a 33% win rate), but some of that might also be the antiquated offensive philosophy that Harbaugh has emphasized the past few years. Having big TEs and mauling offensive linemen helps you against teams that you can out-muscle, but seems less effective against teams that also have big, athletic, and talented players. Jim Harbaugh seems to have conceded this point, hiring Josh Gattis in the offseason to modernize the offense and convert it from a pro-style offense to a spread-offense. Gattis' motto in the offseason was #speedinspace and the goal was to install an offense that would spread the defense out and give the ball to Michigan's athletes in space to allow them to make big plays.
+    <p>But how well has this worked out so far? In the wake of mediocre offensive performances against Army and Wisconsin, people have begun to question "whether the offense lacks identity", "if the system has been fully implemented yet", or "if the system is too complicated for college players". </p>
+    <h2>Growing pains when implementing a new offense</h2>
+    <p>To answer these questions, I'm going to be scraping play-by-play data from MGoBlog. 
+    This is a great dataset because Brian Cook, the founder of MGoBlog, has painstakingly coded each play for offensive and defensive formation, 
+    play call, and number of RBs, WRs, and TEs on the field. </p>
+
+    <h3>Has Michigan truly implemented a spread offense? </h3>
+    <p>The first way I looked at this question is to ask, what percentage of the time is Michigan putting its players in space? Lots of situations and play calls put players in space, but I chose to focus on three fundamental aspects of spread offenses: </p>
+    1. Percentage of non-goal-line plays with 3+ WRs<br>
+    2. Percentage of non-goal-line plays that utilize a read option, QB run, or run-pass option<br>
+    3. Percentage of non-goal-line plays that utilize a quick passes to receivers in space (e.g., screens or slants)<br>
+
+    <p>Michigan utilizes a 3-WR or 4-WR set on 65% of non-goal-line plays, including 72% of non-goal-line pass plays and 55% of non-goal-line run plays. This is pretty good, but gets way worse once you look at the types of plays they’re running from those formations.</p>
+    <p>Their implementation of spread concepts such as the read option, QB run, or run-pass option, on the other hand, is lagging far behind. Some of this might be due to Shea Patterson and Dylan McCaffrey being injured, but my count Michigan has only run a play that utilized a read option, run-pass option, designed QB run, or waggle on 16% of plays and short passes like screens or slants on 12% of plays.</p>
+    <p>What’s worse, is they are very rarely combining these concepts. Less than 7% of Michigan’s offensive plays have involved 3+ WRs on the field and either a spread concept or short pass. 57% of offensive plays involve 3+ WRs but no concepts designed to exploit that fact. </p>
+
+    <[insert Figure2.png here]> percentage of plays utilizing spread concepts and 3+ WRs
+    <img src="{{ site.baseurl }}/blog1/figures/fig2c.jpg" width="300"><br>
+
+    <p>This screams of a team that is stuck between two identities and lacks a coherent offensive philosophy. In the last game against Rutgers we saw Michigan implement the waggle more frequently (23% of plays), which was very successful at getting the QB into space and making a defender cover the QB (opening up other players). This suggests that in earlier games the spread offense might not have been fully operational. In the future, it would be nice to see more read option or run-pass option plays mixed in with the waggle to make the defense truly respect the threat of a QB run. </p>
+
+    <h2>How well is Michigan’s new offense working?</h2>
+    <p>Beyond simply asking whether Michigan is actually implementing a true spread offense, 
+    we can also ask which features of their offense (spread or not spread) are working the best. 
+    To assess this, I looked at two statistics. The first is average yards per play (YPP), 
+    which tells you on average how many yards the offense gains on each play type. 
+    The second is success rate, which is a little more complicated but basically assigns a 1 if the offense gained a "good" amount of yards and 
+    a 0 if the offense didn't gain a "good" amount of yards. "Good" in this context depends on the situation. 
+    If the play is a first-down play, a "good" amount of yards is gaining at least half the yards needed for a first-down (e.g., 6 yards on 1st and 10). 
+    If the play is a second down,  a "good" amount of yards is gaining at least 70% of the yards needed for a first-down (e.g., 5 yards on 2nd and 7).  
+    If the play is third down, a "good" amount of yards is gaining at least 100% of the yards needed for a first down (for obvious reasons). </p>
+
+    <p>In college football, anything over 4.5 yards/play is considered a good run play average, and anything over 7.5 yards/play is considered a good pass play average. 
+    For success rate, a team is doing well if they get a "good" amount of yards on more than 45% of plays (run or pass). </p>
+
+    <p>So how good was Michigan’s offense when running spread-type plays with or without 3+ WRs on the field? 
+    By far Michigan’s most effective play was the pass play with spread-concepts and at least 3+ WRs on the field. 
+    Michigan’s success rate was almost 60%, and they averaged well almost 9 yards/play. 
+    By contrast, Michigan was more effective at running the ball when there were at least 3 WRs on the field, 
+    but were less effective when running the ball using spread-type concepts. </p>
+
+    <[insert Figure3.png here]> yards/play and success rate for spread-type plays
+    <img src="{{ site.baseurl }}/blog1/figures/fig3.jpg" width="300"><br>
+
+    <p>The lack of success when running the ball with spread-type concepts is likely due to the lack of QB run threat, 
+    which either could be due to injuries to the QBs in the first few weeks of the season, or could be growing pains in fully installing the offense. </p>
+
+    <p>The increased success running and throwing the ball with 3 or more WRs on the field is more promising, and could be due to 2 reasons. 
+    First, having 3 WRs on the field more effectively spread the defense out, opening more holes for the RBs and more space for the WRs to operate.</p>
+
+    <p>Second, Michigan's WRs are incredibly good. In particular, Nico Collins is averaging 12.9 yards/play, catching 67% of the balls thrown to him, 
+    with a very impressive 63% success rate. 
+    For context, in 2017 (the most recent year I have stats for individual players), 
+    only 3 WRs (who had at least 5 targets/game) in the entire country averaged more than 12 yards/play with at least a 60% success rate. 
+    Perhaps, more impressively, Michigan's 2nd, 3rd, and 4th best WRs (Black, Bell, and Peoples-Jones) average at least 8 yards/play with a success rate over 50%.
+    For context, Oklahoma State was the only team in the country in 2017 with 4 WRs who averaged at least 8 yards/play with a success rate over 50%, 
+    and they had the 5th best offense in the country that year. So it makes sense that Michigan's offense would be better when they have at least 3 WRs on the field. </p>
+
+    <[insert Figure4.png here]> yards/play and success rate for top-4
+    <img src="{{ site.baseurl }}/blog1/figures/fig4.jpg" width="300"><br>
+    
+    <p>But here's the thing: Only 57% of passes are going to those four players. 
+    Diversity is generally a good thing, and a good offense will need to incorporate passes to TEs and RBs, 
+    but if you have four of the best WRs in the country, you need to get the ball to them more than 19 times/game. 
+    The good news is that 73% of passes in the last game against Rutgers went to Collins, Black, Bell, or Peoples-Jones. 
+    So there's hope that the coaches also believe that these four players need to get the ball more.</p>
+
+    <[insert Figure5.png here]> percentage of passes thrown to top-4 in each game
+    <img src="{{ site.baseurl }}/blog1/figures/fig5.jpg" width="300"><br>
+    <h2>Recommendations for future success</h2>
+    <p>Michigan’s offense has been disappointing overall, and it doesn’t appear that they have fully embraced the spread offense as their identity. 
+    There have however been a few bright spots in Michigan’s offensive performance. 
+    Michigan’s offense is actually quite effective when they spread the defense out with 3 or more WRs and then run plays specifically designed to attack a defense 
+    that has been spread out, but they are only doing that 10% of the time. 
+    Thus, the main recommendation is to focus the game plan on running more plays with multiple spread-type concepts 
+    (3+ WR formations, QB runs, read-options, run-pass options, and waggle pass plays). 
+    In particular, establishing the QB as a legitimate run threat would keep perimeter defenders from crashing 
+    towards the line of scrimmage after they’ve been spread out. </p>
+    <p>The second recommendation is to build the offense around Michigan’s 4 elite WRs. 
+    Michigan’s WRs are so talented that defenses are playing 5-10 yards off the line of scrimmage to respect how athletic Collins and crew are. 
+    If Michigan alternates between throwing screen and slant passes to the WRs that punish the defense for playing so far off the line of scrimmage, 
+    that would also open up longer passes like fades and posts that Michigan’s WRs have converted at a very high rate. 
+    This weekend will be an important test to see whether Michigan can have success against a better defense, 
+    and it will be interesting to see if Michigan implements any of these changes against Iowa.</p>
+
+    <p>Edit: As it turns out, Michigan’s offense didn’t play well at all last weekend against Iowa, 
+    and in fact implemented almost none of the changes my analysis suggested would help the offense perform better [::shrug emoji::]. 
+    They had almost no designed QB runs, they spent less time in 3 WR sets than they did in the first four games, 
+    and they targeted Collins, Black, Bell, and Peoples-Jones even less than they did in the first four games.</p>
+
