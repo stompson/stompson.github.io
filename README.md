@@ -1,4 +1,4 @@
-<img src="{{ site.baseurl }}/static/Picture5.png" width="750" align="center">
+<img src="{{ site.baseurl }}/static/Picture5.png" width="900" align="center">
 <br/>
 ## Steven Tompson, PhD 
 Social Psychologist & Data Nerd
