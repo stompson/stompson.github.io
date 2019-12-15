@@ -3,8 +3,8 @@
 ## Steven Tompson, PhD 
 Social Psychologist & Data Nerd
 
-Robert J. Eichelberger Distinguished Postdoctoral Fellow  
-U.S. Army Research Laboratory  
+Behavioral Data Scientist
+Guild Education
 
 <a href="https://stompson.github.io/about">About Me</a>
 <p></p>
